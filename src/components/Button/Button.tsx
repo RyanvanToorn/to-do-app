@@ -3,6 +3,7 @@ import { Button as MUIButton } from "@mui/material";
 import type { ButtonProps } from "./Button.types";
 
 /**
+ * Button Component
  * Wrapper to allow future library swap with minimal impact.
  */
 
