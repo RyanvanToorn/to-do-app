@@ -1,9 +1,11 @@
 import Button from "@components/Button";
+import Title from "@components/Title";
 
 function App() {
   return (
     <div>
-      <Button iconColor="" />
+      <Title text="To-Do" />
+      <Button />
     </div>
   );
 }

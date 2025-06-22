@@ -1,7 +1,13 @@
 .Title {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--space-s) var(--space-m);
+  background-color: var(--color-9);
+  border-radius: var(--space-s);
 }
 
 .Label {
   font-size: var(--font-size-h2);
+  color: white;
 }

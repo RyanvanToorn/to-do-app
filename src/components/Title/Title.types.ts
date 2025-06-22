@@ -1,8 +1,8 @@
 import type { CSSProperties } from "react";
 
 export interface TitleProps {
-  title: string;
-  isVisible: boolean;
-  extendedClass: string;
+  text: string;
+  isVisible?: boolean;
+  extendedClass?: string;
   inlineStyles?: CSSProperties;
 }

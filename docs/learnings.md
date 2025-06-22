@@ -14,4 +14,8 @@
 
 ## TypeScript:
 
--
+- Basic syntax and usage, very similar to JS obviously, but the type enforcement is cool
+
+## Interfaces:
+
+- Essentially serve as a nicer way to declare props (? is optional) and enforce it across usages, very neat and will be using in future
