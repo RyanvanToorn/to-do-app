@@ -1,0 +1,5 @@
+import type { ButtonProps as MUIButtonProps } from "@mui/material";
+
+export interface ButtonProps extends MUIButtonProps {
+  iconColor: string;
+}
