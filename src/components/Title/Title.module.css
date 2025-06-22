@@ -1,0 +1,7 @@
+.Title {
+  display: block;
+}
+
+.Label {
+  font-size: var(--font-size-h2);
+}
