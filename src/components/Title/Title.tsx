@@ -6,8 +6,10 @@ const Title: React.FC<TitleProps> = ({ text = "To-Do", isVisible = true, extende
   if (!isVisible) return null;
 
   return (
-    <div className={`${TitleStyles.Title} title-wrapper ${extendedClass}`} style={inlineStyles}>
-      <label className={`${TitleStyles.Label} title-label`}>{text}</label>
+    <div className={`${TitleStyles.TitleWrapper} title-wrapper ${extendedClass}`} style={inlineStyles}>
+      <div className={`${TitleStyles.Title} title`}>
+        <label className={`${TitleStyles.Label} title-label`}>{text}</label>
+      </div>
     </div>
   );
 };

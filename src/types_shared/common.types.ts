@@ -5,8 +5,4 @@ export interface StandardProps {
   isVisible?: boolean;
   extendedClass?: string;
   inlineStyles?: CSSProperties;
-  deviceType: DeviceType;
 }
-
-// Essentially a Static entity for the device types (primarily used in styling)
-export type DeviceType = "mobile" | "tablet" | "desktop";
