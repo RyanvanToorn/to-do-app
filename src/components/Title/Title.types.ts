@@ -1,9 +1,5 @@
-import type { CSSProperties } from "react";
-import type { CommonProps } from "../../types/common.types.ts";
+import type { CommonProps } from "types_shared/common.types";
 
 export interface TitleProps extends CommonProps {
   text: string;
-  isVisible?: boolean;
-  extendedClass?: string;
-  inlineStyles?: CSSProperties;
 }

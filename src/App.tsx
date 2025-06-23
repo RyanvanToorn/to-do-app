@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Title text="To-Do" />
-      <Button />
+      <Button>Add New +</Button>
     </div>
   );
 }
