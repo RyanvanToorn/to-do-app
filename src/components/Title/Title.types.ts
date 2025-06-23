@@ -1,5 +1,5 @@
-import type { CommonProps } from "types_shared/common.types";
+import type { StandardProps } from "types_shared/common.types";
 
-export interface TitleProps extends CommonProps {
+export interface TitleProps extends StandardProps {
   text: string;
 }
