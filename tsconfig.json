@@ -15,7 +15,8 @@
       "@types/*": ["types-shared/*"],
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@db/*": ["db./*"]
     }
   },
   "include": ["src"]
