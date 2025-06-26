@@ -7,7 +7,7 @@ import type { AppBarProps } from "./AppBar.types";
  * Wrapper to allow future library swap with minimal impact.
  */
 
-const Card: React.FC<AppBarProps> = ({ children, ...props }) => {
+const AppBar: React.FC<AppBarProps> = ({ children, ...props }) => {
   return (
     <MUIAppBar color="primary" {...props}>
       {children}
@@ -15,4 +15,4 @@ const Card: React.FC<AppBarProps> = ({ children, ...props }) => {
   );
 };
 
-export default Card;
+export default AppBar;
