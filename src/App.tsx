@@ -1,5 +1,6 @@
 import Button from "@components/Button";
 import Title from "@components/Title";
+import AppBar from "@components/AppBar";
 import { useDeviceClass } from "./hooks/useDeviceClass";
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
 
   return (
     <div>
-      <Title text="To-Do" />
+      <AppBar>
+        <Title text="To-Do" />
+      </AppBar>
+
       <Button variant="outlined">Add New +</Button>
     </div>
   );
