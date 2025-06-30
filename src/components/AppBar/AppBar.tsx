@@ -9,7 +9,7 @@ import type { AppBarProps } from "./AppBar.types";
 
 const AppBar: React.FC<AppBarProps> = ({ children, ...props }) => {
   return (
-    <MUIAppBar color="primary" {...props}>
+    <MUIAppBar position="static" color="primary" {...props}>
       {children}
     </MUIAppBar>
   );

@@ -1,2 +1,2 @@
-export { default } from "./Title";
+export { Title } from "./Title";
 export * from "./Title.types";
