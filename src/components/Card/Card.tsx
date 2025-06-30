@@ -1,6 +1,7 @@
 import React from "react";
 import { Card as MUICard } from "@mui/material";
 import type { CardProps } from "./Card.types";
+import styles from "./Card.module.css";
 
 /**
  * Card Component
@@ -9,7 +10,7 @@ import type { CardProps } from "./Card.types";
 
 export const Card: React.FC<CardProps> = ({ children, ...props }) => {
   return (
-    <MUICard color="primary" {...props}>
+    <MUICard className={styles.Card} color="primary" {...props}>
       {children}
     </MUICard>
   );
