@@ -7,7 +7,7 @@ import type { CardProps } from "./Card.types";
  * Intended to act as an additional wrapper to the existing card wrapper, however with unique styling specifically for being used as an individual item within the list of To-dos.
  */
 interface TodoCardProps extends CardProps {
-  title: string;
+  title?: string;
   description?: string;
   dueDate?: string;
 }
