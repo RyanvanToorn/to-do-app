@@ -1,5 +1,5 @@
 import Button from "@components/Button";
-import Title from "@components/Title";
+import { Title } from "@components/Title";
 import AppBar from "@components/AppBar";
 import { Card } from "@components/Card";
 import { TodoCard } from "@components/Card";
@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <AppBar>
-        <Title text="To-Do" />
+        <Title titleText="To-Do" />
       </AppBar>
 
       <Card />
