@@ -7,12 +7,10 @@ import type { CardProps } from "./Card.types";
  * Wrapper to allow future library swap with minimal impact.
  */
 
-const Card: React.FC<CardProps> = ({ children, ...props }) => {
+export const Card: React.FC<CardProps> = ({ children, ...props }) => {
   return (
     <MUICard color="primary" {...props}>
       {children}
     </MUICard>
   );
 };
-
-export default Card;
