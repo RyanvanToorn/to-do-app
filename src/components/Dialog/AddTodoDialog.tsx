@@ -15,7 +15,7 @@ export const AddTodoDialog = () => {
   return (
     <div>
       <Button variant="outlined" onClick={() => setOpen(true)}>
-        Add ToDo
+        Add ToDo Item
       </Button>
 
       <Dialog open={open} onClose={() => setOpen(false)} extendedClass="custom-dialog">
