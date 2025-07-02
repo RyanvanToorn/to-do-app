@@ -13,7 +13,7 @@ export const AddToDoDialog = () => {
   };
 
   return (
-    <>
+    <div>
       <Button variant="outlined" onClick={() => setOpen(true)}>
         Add ToDo
       </Button>
@@ -30,6 +30,6 @@ export const AddToDoDialog = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </>
+    </div>
   );
 };
