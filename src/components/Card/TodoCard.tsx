@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "./Card";
 import type { CardProps } from "./Card.types";
+import Styles from "./Card.module.css";
 
 /**
  * To-do Card Component
@@ -12,14 +13,14 @@ interface TodoCardProps extends CardProps {
   dueDate?: string;
 }
 
-export const TodoCard: React.FC<TodoCardProps> = ({ title, description, dueDate }) => {
+export const TodoCard: React.FC<TodoCardProps> = ({ ...props }) => {
   return (
-    <Card sx={{ backgroundColor: "#f9f9f9", mb: 2 }}>
-      {title}
+    <Card className={`${Styles.TodoCard} ${props.extendedClass} todo-card`}>
+      {props.title}
 
-      {description}
+      {props.description}
 
-      {dueDate}
+      {props.dueDate}
     </Card>
   );
 };

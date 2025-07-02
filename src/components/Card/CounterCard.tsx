@@ -9,12 +9,11 @@ import Styles from "./Card.module.css";
  */
 
 export const CounterCard: React.FC<CounterCardProps> = ({ ...props }) => {
-  if (!props.isVisible) return null;
   return (
-    <Card className={`${Styles.CounterCard} ${props.extendedClass}`}>
-      <div>{props.title} </div>
+    <Card className={`${Styles.CounterCard} ${Styles.extendedClass} counter-card`}>
+      {props.title}
 
-      <div>{props.count}</div>
+      {props.count}
     </Card>
   );
 };
