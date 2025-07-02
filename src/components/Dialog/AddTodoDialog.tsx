@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Dialog } from "./Dialog";
 import { DialogTitle, DialogContent, DialogActions, Button, TextField } from "@mui/material";
 
-export const AddToDoDialog = () => {
+export const AddTodoDialog = () => {
   const [open, setOpen] = useState(false);
   const [todo, setTodo] = useState("My current task");
 
