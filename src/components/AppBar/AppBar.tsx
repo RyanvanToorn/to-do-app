@@ -1,6 +1,7 @@
 import React from "react";
 import { AppBar as MUIAppBar } from "@mui/material";
 import type { AppBarProps } from "./AppBar.types";
+import Styles from "./AppBar.module.css";
 
 /**
  * AppBar Component
@@ -9,7 +10,7 @@ import type { AppBarProps } from "./AppBar.types";
 
 const AppBar: React.FC<AppBarProps> = ({ children, ...props }) => {
   return (
-    <MUIAppBar color="primary" {...props}>
+    <MUIAppBar position="static" color="primary" className={`${Styles.Appbar} ${props.extendedClass}`} {...props}>
       {children}
     </MUIAppBar>
   );
