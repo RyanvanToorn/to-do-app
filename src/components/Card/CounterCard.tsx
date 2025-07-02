@@ -1,18 +1,19 @@
 import React from "react";
 import { Card } from "@mui/material";
 import type { CounterCardProps } from "./CounterCard.types";
+import Styles from "./Card.module.css";
 
 /**
  * Counter Card Component
  * Intended to act as an additional wrapper to the existing card wrapper, however with unique styling specifically for being used as a counter for the To-dos.
  */
 
-export const CounterCard: React.FC<CounterCardProps> = ({ title, count }) => {
+export const CounterCard: React.FC<CounterCardProps> = ({ ...props }) => {
   return (
-    <Card sx={{ backgroundColor: "#f9f9f9", mb: 2 }}>
-      {title}
+    <Card className={`${Styles.CounterCard} ${Styles.extendedClass} counter-card`}>
+      {props.title}
 
-      {count}
+      {props.count}
     </Card>
   );
 };
