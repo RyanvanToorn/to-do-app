@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Dialog } from "./Dialog";
-import { DialogTitle, DialogContent, DialogActions, Button, TextField } from "@mui/material";
+import { DialogTitle, DialogContent, DialogActions } from "@mui/material";
+import { Button } from "@components/Button";
+import { TextField } from "@components/TextField";
 
 export const AddTodoDialog = () => {
   const [open, setOpen] = useState(false);
