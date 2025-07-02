@@ -7,10 +7,8 @@ import type { TextFieldProps } from "./TextField.types";
  * Wrapper to allow future library swap with minimal impact.
  */
 
-const TextField: React.FC<TextFieldProps> = ({ ...props }) => {
+export const TextField: React.FC<TextFieldProps> = ({ ...props }) => {
   if (!props.isVisible) return null;
 
   return <MUITextField color="primary" {...props}></MUITextField>;
 };
-
-export default TextField;

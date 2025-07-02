@@ -1,2 +1,2 @@
-export { default } from "./AppBar";
+export { AppBar } from "./AppBar";
 export * from "./AppBar.types";
