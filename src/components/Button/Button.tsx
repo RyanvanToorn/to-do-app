@@ -8,12 +8,10 @@ import Styles from "./Button.module.css";
  * Wrapper to allow future library swap with minimal impact.
  */
 
-const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+export const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   return (
     <MUIButton variant="contained" color="primary" className={Styles.Button} {...props}>
       {children}
     </MUIButton>
   );
 };
-
-export default Button;
