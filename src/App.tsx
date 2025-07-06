@@ -16,9 +16,12 @@ function App() {
         <Title titleText="To-Do" />
       </AppBar>
 
-      <Card />
-      <TodoCard />
-      <CounterCard title="Cancelled" count={5}></CounterCard>
+      <div>
+        <CounterCard title="Cancelled" count={5}></CounterCard>
+        <CounterCard title="In-progress" count={3}></CounterCard>
+        <CounterCard title="Completed" count={10}></CounterCard>
+        <CounterCard title="Overdue" count={2}></CounterCard>
+      </div>
 
       <TextField isVisible={false} />
       <Button variant="outlined">Add New +</Button>
