@@ -1,0 +1,12 @@
+.CounterCard {
+  display: block;
+  border: 1px solid var(--color-neutral-3);
+  border-radius: var(--size-s);
+}
+
+.counter-card__title-row {
+  padding-top: var(--space-s);
+}
+
+.CounterCard .counter-card__count-row {
+}
