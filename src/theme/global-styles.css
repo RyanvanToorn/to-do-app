@@ -16,3 +16,7 @@
   --color-9: #6930c3;
   --color-10: #7400b8;
 }
+
+body {
+  margin: 0; /* Remove default margin - will add device safe spacing */
+}
