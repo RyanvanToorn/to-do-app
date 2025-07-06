@@ -1,7 +1,7 @@
 import React from "react";
-import { Card } from "@mui/material";
+import { Card } from "../Card";
 import type { CounterCardProps } from "./CounterCard.types";
-import Styles from "./Card.module.css";
+import Styles from "./CounterCard.module.css";
 
 /**
  * Counter Card Component
@@ -10,10 +10,9 @@ import Styles from "./Card.module.css";
 
 export const CounterCard: React.FC<CounterCardProps> = ({ ...props }) => {
   return (
-    <Card className={`${Styles.CounterCard} ${Styles.extendedClass} counter-card`}>
-      {props.title}
-
-      {props.count}
+    <Card className={`${Styles.CounterCard} ${props.extendedClass}`}>
+      <div className={Styles.TitleRow}>{props.title}</div>
+      <div className={Styles.CountRow}>{props.count}</div>
     </Card>
   );
 };

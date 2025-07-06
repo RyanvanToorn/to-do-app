@@ -1,0 +1,20 @@
+.CounterCard {
+  display: block;
+  border: 1px solid var(--color-neutral-3);
+  border-radius: var(--size-s);
+  padding: var(--space-s);
+  font-weight: var(--font-weight-bold);
+  max-width: 100%;
+}
+
+.TitleRow,
+.CountRow {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  flex-grow: 0;
+}
+
+.CountRow {
+  padding-top: var(--space-s);
+}
