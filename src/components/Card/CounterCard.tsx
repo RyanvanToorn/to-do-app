@@ -10,9 +10,9 @@ import Styles from "./CounterCard.module.css";
 
 export const CounterCard: React.FC<CounterCardProps> = ({ ...props }) => {
   return (
-    <Card className={`${Styles.CounterCard} ${Styles.extendedClass} counter-card`}>
-      <div className="counter-card__title-row">{props.title}</div>
-      <div className="counter-card__count-row">{props.count}</div>
+    <Card className={`${Styles.CounterCard} ${props.extendedClass}`}>
+      <div className={Styles.TitleRow}>{props.title}</div>
+      <div className={Styles.CountRow}>{props.count}</div>
     </Card>
   );
 };
